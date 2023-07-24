@@ -1,0 +1,13 @@
+﻿services:
+  oracle-ef-core:
+    image: oracle-ef-core
+    build:
+      context: .
+      dockerfile: OracleEfCoreDemo/Dockerfile
+    environment:
+       TZ: Asia/Shanghai
+       TnsAdminDirectory: /app/oracledb_Wallet_RichDB
+    ports:
+      - 5544:80
+    volumes:
+       - /Users/darren/coding/tool/oracledb_Wallet_RichDB:/app/oracledb_Wallet_RichDB
