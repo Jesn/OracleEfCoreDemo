@@ -34,7 +34,7 @@ jobs:
         context: .
         platforms: |
           linux/arm64
-        file: ./OracleEfCoreDemo/Dockerfile
+        file: OracleEfCoreDemo/Dockerfile
         push: true
         tags: |
           richpeople/oracle-ef-demo:latest
